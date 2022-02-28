@@ -1,10 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function MyfirstFunction(){
+function MyHeader(){
+  return (
+    <header>
+      <nav>
+      <img src='./logo.svg' width='40px' />
+
+      </nav>
+    </header>
+  )
+}
+
+function MyFooter(){
+  return (
+    <footer>
+      <small>@ 2022 Diev development, All rights reserved.</small>
+    </footer>
+  )
+}
+
+function MainContent(){
   return (
     <div>
-      <img src='./logo.svg' width='40px' />
       <h1 className="main--title">Fun facts about React</h1>
       <ol className="main--facts">
           <li>I beleave recat is the most popular</li>
@@ -16,8 +34,22 @@ function MyfirstFunction(){
     </div>
   )
 }
+
+
+function Page(){
+  return(
+    <div>
+      <MyHeader />
+      <MainContent />
+      <MyFooter />
+    </div>
+    
+  )
+}
+
 ReactDOM.render(
-  <MyfirstFunction />,
+  <Page />,
+
   document.getElementById('root')
 );
 
