@@ -20,6 +20,12 @@ code {
   height: 60px;
 }
 
+.gray {
+  color: gray;
+}
+.bold {
+  font-weight: bold;
+}
 .nav-items {
   list-style: none;
   display: flex;
@@ -45,6 +51,28 @@ code {
 
 .main-content > li {
   padding-block: 8px;
+}
+
+.card {
+  width: 175px;
+  font-size: 16px;
+  margin: 0 25px 0 25px;
+}
+.seiko {
+  width: 100%;
+  border-radius: 9px;
+}
+.card-start{
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.card-start > span {
+  margin-right: 5px;
+}
+.star-icon{
+  height: 14px;
+  margin-right: 5px;
 }
 /* footer */
 .footer{
